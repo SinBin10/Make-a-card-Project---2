@@ -23,13 +23,15 @@ body {
 }
 
 h2 {
+  margin-top:0;
+  margin-bottom:0;
   color: white;
 }
 
 /*card header*/
 
 .card__header {
-  margin: 8.8rem 2.5rem;
+  margin: 8.8rem 2.5rem 0 2.5rem;
   height: 24rem;
   background-image: url("images/image-header-mobile.jpg");
   background-color: var(--color-accent);
@@ -41,6 +43,13 @@ h2 {
 
 /*card body*/
 
-.card__body{
+.card__body {
   background-color: var(--color-secondary);
+  margin: 0 2.5rem;
+  padding: 4.2rem 3rem;
+  text-align: center;
+}
+
+.insight{
+  color: var(--color-accent);
 }
