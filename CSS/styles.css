@@ -49,6 +49,11 @@ p {
   line-height: 1.7;
 }
 
+/*grid*/
+
+.grid {
+  display: grid;
+}
 /*card header*/
 
 .card__header {
@@ -69,8 +74,54 @@ p {
   margin: 0 2.5rem 8.7rem 2.5rem;
   padding: 4.2rem 3rem;
   text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
+.flex{
+  display:flex;
+  flex-direction: column;
+}
 .insight {
   color: var(--color-accent);
+}
+
+/*dekstop version*/
+
+@media screen and (min-width: 1440px) {
+  .grid {
+    grid-template-columns: 57rem 54rem;
+    grid-template-areas: "first second";
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card__body {
+    grid-area: first;
+    height: 45rem;
+    margin: 0;
+    padding: 8rem 12rem 7rem 7.2rem;
+    text-align: left;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .card__header {
+    grid-area: second;
+    height: 45rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .flex{
+    flex-direction:row;
+  }
+
+  .tenk, .three{
+    padding-right: 6.5rem;
+  }
 }
